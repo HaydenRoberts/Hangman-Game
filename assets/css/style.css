@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+.title {
+    text-align: center;
+    position: relative;
+}
+
+.hangman {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.hangman h1 {
+    font-size: 50px;
+    color: rgb(80, 54, 54);
+}
+
+.tagline h3 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.tagline {
+    font-family: 'Nanum Pen Script', cursive;
+    position: relative;
+    left: 130px;
+    bottom: 40px;
+    transform: rotate(-15deg);
+    color: rgb(58, 58, 151);
+}
+
+.video {
+    background-color: rgb(173, 173, 173);
+    height: 400px;
+    border-radius: 8px;
+}
+
+.playing-field {
+    background-color: rgb(173, 173, 173);
+    height: 400px;
+    border-radius: 8px;
+}
+
+.get-started {
+    position: relative;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+    color: rgb(160, 1, 1);
+}
+
+.word {
+    text-align: center;
+}
+
+.word h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.current-word {
+    text-align: center;
+}
+
+.space-1 {
+    display: inline;
+}
+
+.space-2 {
+    display: inline;
+}
+
+.space-3 {
+    display: inline;
+}
+
+.space-4 {
+    display: inline;
+}
+
+.space-5 {
+    display: inline;
+}
+
+.space-6 {
+    display: inline;
+}
+
+.space-7 {
+    display: inline;
+}
+
+.space-8 {
+    display: inline;
+}
+
+.space-9 {
+    display: inline;
+}
+
+.space-10 {
+    display: inline;
+}
+
+.guesses {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.guesses h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.guessed-letters {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.guessed-letters h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}

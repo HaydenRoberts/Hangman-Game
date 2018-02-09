@@ -1,31 +1,66 @@
-var allWords = ["ball"];
+var allWords = ["ball", "cleats", "soccer", "field"];
 var currentWord = document.getElementById("word");
-var word = "";
+var underScores = "";
 var guessAmount = document.getElementById("guess-amount");
 var guessedLetters = document.getElementById("guessed-letters");
 var guessCount = 9;
 var letters = [];
+var randomWord = randomWord();
+var splitRandomWord = randomWord.split('')
+var input = '';
 
-//console.log(currentWord);
-//console.log(word);
 
-allWords[0].split('');
-//console.log(allWords[0].split(''));
+// allWords[0].split('');
+//console.log(randomWord.split(''));
 
-for (i = 0; i < allWords[0].length; i++) {
-    word += "_ ";
+for (i = 0; i < splitRandomWord.length; i++) {
+    underScores += "_ ";
 };
-var splitWord = word.split('');
-//console.log(word.split(''));
 
-currentWord.innerHTML = word;
+// Splitting underscores
+var splitWord = underScores.split('');
 
 
-// console.log(word[0] + word[1]);
+// Current word being guessed
+currentWord.innerHTML = underScores;
+
+// Random Word generator
+function randomWord() {
+    var randomNum = Math.floor(Math.random() * allWords.length);
+    return allWords[randomNum];
+}
+//console.log(randomWord());
+
+var letterGuessed = document.getElementById("guessed-letters");
+input = letterGuessed.value;
+console.log(letterGuessed);
+// Guess Function
+function isLetterInWord(letter, arr) {
+    for (var i = 0; i < arr.length; i++) {
+        if (letter == arr[i]) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// If statements
+
+if (isLetterInWord)
+
+
+
+
+
+
+
+
+// When user clicks a letter
 document.onkeyup = function (event) {
 
     var userInput = event.key;
     console.log(userInput);
+
     // console.log(allWords[0]);
     if (allWords[0] === "ball") {
         if (userInput === "b") {
@@ -34,7 +69,7 @@ document.onkeyup = function (event) {
             splitWord.join("");
             console.log(splitWord);
             currentWord.innerHTML = splitWord;
-            
+
 
         } else if (userInput === "a") {
             // currentWord.innerHTML = (word[2] = allWords[0][1]);
@@ -58,7 +93,7 @@ document.onkeyup = function (event) {
                 guessedLetters.innerHTML = letters;
                 //Subtract 1 from guesses if user guess wrong
                 guessAmount.textContent = guessCount--;
-                if (guessCount === 0){
+                if (guessCount === 0) {
                     reset();
                 } else {
 
@@ -74,8 +109,8 @@ document.onkeyup = function (event) {
     }
 }
 
-function reset (){
-    for (i = 0; i < allWords[0].length; i++) {
+function reset() {
+    for (i = 0; i < splitRandomWord.length; i++) {
         word += "_ ";
     };
     guessCount = 10;

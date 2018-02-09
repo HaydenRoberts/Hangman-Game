@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nanum+Pen+Script|Roboto+Slab:700" rel="stylesheet">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12 title">
+            <div class="hangman"><h1>Hangman</h1></div>
+            <div class="tagline"><h3>Soccer Edition</h3></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 offset-md-1 video">
+
+        </div>
+        <div class="col-md-4 offset-md-2 playing-field">
+            <div class="get-started">
+                <p>- press any key to get started... -</p>
+            </div>
+            <div class="word">
+                <h3>Current Word:</h3> <br>
+            </div>
+            <div class="current-word">
+                <span id="word"></span>
+            </div>
+            <div class="guesses">
+                <h3>Guesses Remaining:</h3> <br>
+                <span id="guess-amount">10</span>
+            </div>
+            <div class="guessed-letters">
+                    <h3>Guessed Letters:</h3> <br>
+                    <span id="guessed-letters">...</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/game-2.js"></script>
+</body>
+</html>
